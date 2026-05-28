@@ -1208,7 +1208,7 @@
 		<!-- Settings Bar -->
 		<!-- Settings Bar & Panel Sticky Container -->
 		{#if selectedSurah}
-			<div class="sticky top-20 z-20 bg-white/95 dark:bg-slate-900/95 border-b border-slate-200/50 dark:border-slate-800 backdrop-blur">
+			<div class="sticky top-20 z-20 bg-white dark:bg-slate-900 border-b border-slate-200/50 dark:border-slate-800">
 				<!-- Settings Bar -->
 				<div class="flex items-center justify-between px-6 py-4">
 					<!-- Title Details -->
@@ -1711,7 +1711,7 @@
 {#if showAlFatihahReminder && pendingSurah}
 	<!-- eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-noninteractive-element-interactions -->
 	<div 
-		class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/60 backdrop-blur-sm transition-all duration-300"
+		class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/75 transition-all duration-300"
 		role="dialog"
 		aria-labelledby="reminder-title"
 	>
@@ -1757,7 +1757,7 @@
 <!-- Tajweed Side Panel Drawer -->
 {#if showTajweedPanel}
 	<!-- eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions -->
-	<div class="fixed inset-0 z-40 bg-slate-950/20 dark:bg-slate-950/50 backdrop-blur-xs lg:hidden" onclick={() => showTajweedPanel = false}></div>
+	<div class="fixed inset-0 z-40 bg-slate-950/40 dark:bg-slate-950/70 lg:hidden" onclick={() => showTajweedPanel = false}></div>
 	<aside 
 		class="fixed top-20 right-0 bottom-0 z-50 w-full sm:w-[460px] bg-white dark:bg-slate-900 border-l border-slate-200/80 dark:border-slate-800 shadow-2xl flex flex-col transition-all duration-300"
 		role="dialog"
@@ -1866,7 +1866,7 @@
 <!-- Recitation Corrector Side Panel Drawer -->
 {#if showCorrectorPanel}
 	<!-- eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions -->
-	<div class="fixed inset-0 z-40 bg-slate-950/20 dark:bg-slate-950/50 backdrop-blur-xs lg:hidden" onclick={() => showCorrectorPanel = false}></div>
+	<div class="fixed inset-0 z-40 bg-slate-950/40 dark:bg-slate-950/70 lg:hidden" onclick={() => showCorrectorPanel = false}></div>
 	<aside 
 		class="fixed top-20 right-0 bottom-0 z-50 w-full sm:w-[460px] bg-white dark:bg-slate-900 border-l border-slate-200/80 dark:border-slate-800 shadow-2xl flex flex-col transition-all duration-300"
 		role="dialog"
